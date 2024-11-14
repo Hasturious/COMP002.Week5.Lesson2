@@ -9,15 +9,23 @@
     <button>PUSH ME</button>
 
     <script>
-        const button = document.querySelector('button');
+        src="script.js"
 
-        button.addEventListener('click', function() {
-            alert('Button was clicked!');
+        const button = document.querySelector("button");
+
+        button.addEventListener("click", function() {
+            alert("Button was clicked!");
         });
-        </script>
 
-    <script src="script.js"></script>
+        const a = document.querySelector("a")
 
-    <a>https://orteil.dashnet.org/cookieclicker/</a>
+        a.addEventListener("click", function(blockSite)) {
+        blockSite.preventDefault();
+        alert("Get back to work!")
+        }
+    </script>
+
+
+    <a href="https://orteil.dashnet.org/cookieclicker/" target="_blank">Cookie Clicker</a>
 </body>
 </html>
