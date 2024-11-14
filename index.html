@@ -8,9 +8,11 @@
 <body>
     <button>PUSH ME</button>
 
-    <script>
-        src="script.js"
+    <a href="https://orteil.dashnet.org/cookieclicker/" target="_blank">Cookie Clicker</a>
 
+    <!--<script>src="script.js"</script> -->
+
+    <script>
         const button = document.querySelector("button");
 
         button.addEventListener("click", function() {
@@ -19,13 +21,11 @@
 
         const a = document.querySelector("a")
 
-        a.addEventListener("click", function(blockSite)) {
-        blockSite.preventDefault();
-        alert("Get back to work!")
-        }
+        a.addEventListener("click", function(event) {
+            event.preventDefault();
+            alert("Get back to work!")
+        });
     </script>
-
-
-    <a href="https://orteil.dashnet.org/cookieclicker/" target="_blank">Cookie Clicker</a>
+    
 </body>
 </html>
